@@ -1,0 +1,589 @@
+[
+  {
+    "timeMs": 30,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 13,
+      "expandedNodes": 14,
+      "maximumFrontier": 28
+    }
+  },
+  {
+    "timeMs": 3673.466666666669,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 21,
+      "y": 5
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 5
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 4
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 5
+      },
+      "status": "success",
+      "cost": 7,
+      "expandedNodes": 8,
+      "maximumFrontier": 15
+    }
+  },
+  {
+    "timeMs": 4375.106666666668,
+    "from": "patrol",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "external",
+    "guard": "visión válida",
+    "reason": "jugador visible",
+    "lastKnown": {
+      "x": 19,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 19,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 19,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 25,
+      "y": 5
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 19,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 9,
+      "expandedNodes": 10,
+      "maximumFrontier": 19
+    }
+  },
+  {
+    "timeMs": 4530.116666666669,
+    "from": "chase",
+    "to": "investigate",
+    "event": "player-lost",
+    "kind": "external",
+    "guard": "hay última posición conocida",
+    "reason": "jugador fuera de visión",
+    "lastKnown": {
+      "x": 20,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 20,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 20,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 25,
+      "y": 5
+    },
+    "vision": "outside-cone",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 20,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 8,
+      "expandedNodes": 9,
+      "maximumFrontier": 17
+    }
+  },
+  {
+    "timeMs": 5400.076666666668,
+    "from": "investigate",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "external",
+    "guard": "visión válida",
+    "reason": "jugador visible",
+    "lastKnown": {
+      "x": 23,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 23,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 23,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 25,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 23,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 2,
+      "expandedNodes": 3,
+      "maximumFrontier": 6
+    }
+  },
+  {
+    "timeMs": 5508.406666666668,
+    "from": "chase",
+    "to": "chase",
+    "event": "sound-heard",
+    "kind": "ignored",
+    "guard": "estado = Perseguir, la visión tiene prioridad",
+    "reason": "sonido ignorado",
+    "lastKnown": {
+      "x": 23,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 23,
+      "y": 2
+    },
+    "command": null,
+    "guardCell": {
+      "x": 25,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": null
+  },
+  {
+    "timeMs": 6110.026666666667,
+    "from": "chase",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "internal",
+    "guard": "intervalo de replanificación vencido",
+    "reason": "jugador visible en otra celda",
+    "lastKnown": {
+      "x": 22,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 22,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 22,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 23,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 22,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 1,
+      "expandedNodes": 2,
+      "maximumFrontier": 4
+    }
+  },
+  {
+    "timeMs": 6628.356666666667,
+    "from": "chase",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "internal",
+    "guard": "cambio relevante del objetivo",
+    "reason": "jugador visible en otra celda",
+    "lastKnown": {
+      "x": 19,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 19,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 19,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 22,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 19,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 3,
+      "expandedNodes": 4,
+      "maximumFrontier": 8
+    }
+  },
+  {
+    "timeMs": 7124.996666666666,
+    "from": "chase",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "internal",
+    "guard": "cambio relevante del objetivo",
+    "reason": "jugador visible en otra celda",
+    "lastKnown": {
+      "x": 16,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 16,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 16,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 20,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 16,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 4,
+      "expandedNodes": 5,
+      "maximumFrontier": 9
+    }
+  },
+  {
+    "timeMs": 7628.296666666665,
+    "from": "chase",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "internal",
+    "guard": "cambio relevante del objetivo",
+    "reason": "jugador visible en otra celda",
+    "lastKnown": {
+      "x": 13,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 13,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 13,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 18,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 13,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 5,
+      "expandedNodes": 6,
+      "maximumFrontier": 12
+    }
+  },
+  {
+    "timeMs": 8148.3066666666655,
+    "from": "chase",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "internal",
+    "guard": "cambio relevante del objetivo",
+    "reason": "jugador visible en otra celda",
+    "lastKnown": {
+      "x": 10,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 10,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 10,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 17,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 10,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 7,
+      "expandedNodes": 8,
+      "maximumFrontier": 16
+    }
+  },
+  {
+    "timeMs": 8173.3066666666655,
+    "from": "chase",
+    "to": "investigate",
+    "event": "player-lost",
+    "kind": "external",
+    "guard": "hay última posición conocida",
+    "reason": "jugador fuera de visión",
+    "lastKnown": {
+      "x": 10,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 10,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 10,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 17,
+      "y": 2
+    },
+    "vision": "outside-cone",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 10,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 7,
+      "expandedNodes": 8,
+      "maximumFrontier": 16
+    }
+  },
+  {
+    "timeMs": 9006.576666666664,
+    "from": "investigate",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "external",
+    "guard": "visión válida",
+    "reason": "jugador visible",
+    "lastKnown": {
+      "x": 8,
+      "y": 2
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 8,
+      "y": 2
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 8,
+        "y": 2
+      }
+    },
+    "guardCell": {
+      "x": 14,
+      "y": 2
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 8,
+        "y": 2
+      },
+      "status": "success",
+      "cost": 6,
+      "expandedNodes": 7,
+      "maximumFrontier": 12
+    }
+  },
+  {
+    "timeMs": 14001.40666666666,
+    "from": "chase",
+    "to": "patrol",
+    "event": "reset",
+    "kind": "external",
+    "guard": "siempre",
+    "reason": "reinicio pedido",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 17
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 17
+      }
+    },
+    "guardCell": {
+      "x": 8,
+      "y": 2
+    },
+    "vision": null,
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 17
+      },
+      "status": "success",
+      "cost": 0,
+      "expandedNodes": 1,
+      "maximumFrontier": 1
+    }
+  },
+  {
+    "timeMs": 56.67000000000007,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 13,
+      "expandedNodes": 14,
+      "maximumFrontier": 28
+    }
+  }
+]

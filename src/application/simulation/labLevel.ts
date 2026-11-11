@@ -5,6 +5,12 @@ export const GRID_WIDTH = 30;
 export const GRID_HEIGHT = 20;
 export const PLAYER_START: GridPoint = { x: 2, y: 2 };
 export const GUARD_START: GridPoint = { x: 27, y: 17 };
+export const PATROL_POINTS: readonly GridPoint[] = [
+  { x: 27, y: 17 },
+  { x: 27, y: 4 },
+  { x: 21, y: 5 },
+  { x: 21, y: 13 },
+];
 
 interface BlockedRectangle {
   readonly x: number;

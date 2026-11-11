@@ -1,0 +1,491 @@
+[
+  {
+    "timeMs": 100,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 13,
+      "expandedNodes": 14,
+      "maximumFrontier": 28
+    }
+  },
+  {
+    "timeMs": 1550,
+    "from": "patrol",
+    "to": "investigate",
+    "event": "sound-heard",
+    "kind": "external",
+    "guard": "celda del sonido transitable",
+    "reason": "sonido oído",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 27,
+      "y": 15
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 15
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 12
+    },
+    "vision": "outside-cone",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 15
+      },
+      "status": "success",
+      "cost": 3,
+      "expandedNodes": 4,
+      "maximumFrontier": 8
+    }
+  },
+  {
+    "timeMs": 2450,
+    "from": "investigate",
+    "to": "search",
+    "event": "arrived",
+    "kind": "external",
+    "guard": "llegada al destino actual",
+    "reason": "llegó a la última posición conocida",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 27,
+      "y": 13
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 13
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 15
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 13
+      },
+      "status": "success",
+      "cost": 2,
+      "expandedNodes": 3,
+      "maximumFrontier": 6
+    }
+  },
+  {
+    "timeMs": 3050,
+    "from": "search",
+    "to": "search",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "quedan puntos de búsqueda",
+    "reason": "punto de búsqueda alcanzado",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 28,
+      "y": 15
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 28,
+        "y": 15
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 13
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 28,
+        "y": 15
+      },
+      "status": "success",
+      "cost": 3,
+      "expandedNodes": 4,
+      "maximumFrontier": 5
+    }
+  },
+  {
+    "timeMs": 3900,
+    "from": "search",
+    "to": "search",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "quedan puntos de búsqueda",
+    "reason": "punto de búsqueda alcanzado",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 27,
+      "y": 17
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 17
+      }
+    },
+    "guardCell": {
+      "x": 28,
+      "y": 15
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 17
+      },
+      "status": "success",
+      "cost": 3,
+      "expandedNodes": 4,
+      "maximumFrontier": 5
+    }
+  },
+  {
+    "timeMs": 4750,
+    "from": "search",
+    "to": "search",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "quedan puntos de búsqueda",
+    "reason": "punto de búsqueda alcanzado",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 25,
+      "y": 15
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 25,
+        "y": 15
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 25,
+        "y": 15
+      },
+      "status": "success",
+      "cost": 4,
+      "expandedNodes": 5,
+      "maximumFrontier": 9
+    }
+  },
+  {
+    "timeMs": 5900,
+    "from": "search",
+    "to": "search",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "quedan puntos de búsqueda",
+    "reason": "punto de búsqueda alcanzado",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 27,
+      "y": 13
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 13
+      }
+    },
+    "guardCell": {
+      "x": 25,
+      "y": 15
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 13
+      },
+      "status": "success",
+      "cost": 4,
+      "expandedNodes": 5,
+      "maximumFrontier": 6
+    }
+  },
+  {
+    "timeMs": 6450,
+    "from": "search",
+    "to": "return",
+    "event": "tick",
+    "kind": "external",
+    "guard": "tiempo ≥ vencimiento",
+    "reason": "búsqueda agotada",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 21,
+      "y": 13
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 13
+      }
+    },
+    "guardCell": {
+      "x": 25,
+      "y": 13
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 13
+      },
+      "status": "success",
+      "cost": 34,
+      "expandedNodes": 174,
+      "maximumFrontier": 21
+    }
+  },
+  {
+    "timeMs": 15950,
+    "from": "return",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "external",
+    "guard": "llegada al destino actual",
+    "reason": "punto de patrulla alcanzado",
+    "lastKnown": {
+      "x": 27,
+      "y": 15
+    },
+    "memorySource": "sound",
+    "destination": {
+      "x": 27,
+      "y": 17
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 17
+      }
+    },
+    "guardCell": {
+      "x": 21,
+      "y": 13
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 17
+      },
+      "status": "success",
+      "cost": 38,
+      "expandedNodes": 106,
+      "maximumFrontier": 35
+    }
+  },
+  {
+    "timeMs": 16000,
+    "from": "patrol",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "external",
+    "guard": "visión válida",
+    "reason": "jugador visible",
+    "lastKnown": {
+      "x": 21,
+      "y": 14
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 21,
+      "y": 14
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 14
+      }
+    },
+    "guardCell": {
+      "x": 21,
+      "y": 13
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 14
+      },
+      "status": "success",
+      "cost": 1,
+      "expandedNodes": 2,
+      "maximumFrontier": 4
+    }
+  },
+  {
+    "timeMs": 16050,
+    "from": "chase",
+    "to": "investigate",
+    "event": "player-lost",
+    "kind": "external",
+    "guard": "hay última posición conocida",
+    "reason": "jugador fuera de visión",
+    "lastKnown": {
+      "x": 21,
+      "y": 14
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 21,
+      "y": 14
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 14
+      }
+    },
+    "guardCell": {
+      "x": 21,
+      "y": 13
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 14
+      },
+      "status": "success",
+      "cost": 1,
+      "expandedNodes": 2,
+      "maximumFrontier": 4
+    }
+  },
+  {
+    "timeMs": 16350,
+    "from": "investigate",
+    "to": "search",
+    "event": "arrived",
+    "kind": "external",
+    "guard": "llegada al destino actual",
+    "reason": "llegó a la última posición conocida",
+    "lastKnown": {
+      "x": 21,
+      "y": 14
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 21,
+      "y": 12
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 12
+      }
+    },
+    "guardCell": {
+      "x": 21,
+      "y": 14
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 12
+      },
+      "status": "success",
+      "cost": 2,
+      "expandedNodes": 3,
+      "maximumFrontier": 5
+    }
+  }
+]

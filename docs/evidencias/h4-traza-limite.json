@@ -1,0 +1,258 @@
+[
+  {
+    "timeMs": 100,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 13,
+      "expandedNodes": 14,
+      "maximumFrontier": 28
+    }
+  },
+  {
+    "timeMs": 3750,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 21,
+      "y": 5
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 5
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 4
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 5
+      },
+      "status": "unreachable",
+      "cost": null,
+      "expandedNodes": 434,
+      "maximumFrontier": 26
+    }
+  },
+  {
+    "timeMs": 3800,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "route-failed",
+    "kind": "internal",
+    "guard": "quedan puntos sin probar",
+    "reason": "punto de patrulla inaccesible (unreachable)",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 21,
+      "y": 13
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 21,
+        "y": 13
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 4
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 21,
+        "y": 13
+      },
+      "status": "success",
+      "cost": 25,
+      "expandedNodes": 142,
+      "maximumFrontier": 25
+    }
+  },
+  {
+    "timeMs": 4100,
+    "from": "patrol",
+    "to": "chase",
+    "event": "player-seen",
+    "kind": "external",
+    "guard": "visión válida",
+    "reason": "jugador visible",
+    "lastKnown": {
+      "x": 24,
+      "y": 4
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 24,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 24,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 26,
+      "y": 4
+    },
+    "vision": "visible",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 24,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 2,
+      "expandedNodes": 3,
+      "maximumFrontier": 6
+    }
+  },
+  {
+    "timeMs": 4100,
+    "from": "chase",
+    "to": "chase",
+    "event": "sound-heard",
+    "kind": "discarded",
+    "guard": "transición externa previa en el cuadro",
+    "reason": "descartado por prioridad",
+    "lastKnown": {
+      "x": 24,
+      "y": 4
+    },
+    "memorySource": "vision",
+    "destination": {
+      "x": 24,
+      "y": 4
+    },
+    "command": null,
+    "guardCell": {
+      "x": 26,
+      "y": 4
+    },
+    "vision": "visible",
+    "route": null
+  },
+  {
+    "timeMs": 4200,
+    "from": "chase",
+    "to": "patrol",
+    "event": "reset",
+    "kind": "external",
+    "guard": "siempre",
+    "reason": "reinicio pedido",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 17
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 17
+      }
+    },
+    "guardCell": {
+      "x": 26,
+      "y": 4
+    },
+    "vision": null,
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 17
+      },
+      "status": "success",
+      "cost": 0,
+      "expandedNodes": 1,
+      "maximumFrontier": 1
+    }
+  },
+  {
+    "timeMs": 4300,
+    "from": "patrol",
+    "to": "patrol",
+    "event": "arrived",
+    "kind": "internal",
+    "guard": "llegada al destino actual",
+    "reason": "siguiente punto de patrulla",
+    "lastKnown": null,
+    "memorySource": null,
+    "destination": {
+      "x": 27,
+      "y": 4
+    },
+    "command": {
+      "type": "navigate",
+      "goal": {
+        "x": 27,
+        "y": 4
+      }
+    },
+    "guardCell": {
+      "x": 27,
+      "y": 17
+    },
+    "vision": "out-of-range",
+    "route": {
+      "algorithm": "astar",
+      "goal": {
+        "x": 27,
+        "y": 4
+      },
+      "status": "success",
+      "cost": 13,
+      "expandedNodes": 14,
+      "maximumFrontier": 28
+    }
+  }
+]
